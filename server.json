@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.lordbasilaiassistant-sudo/base-token-safety",
+  "description": "Keyless token safety checks for Base: honeypot signals, source verification, explicit verdicts",
+  "repository": {
+    "url": "https://github.com/lordbasilaiassistant-sudo/base-token-safety-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://broke2builtai.com",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@broketobuilt/base-token-safety-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BASE_RPC_URL",
+          "description": "Override the default public Base RPC endpoint",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "ETH_RPC_URL",
+          "description": "Override the default public Ethereum RPC endpoint",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BSC_RPC_URL",
+          "description": "Override the default public BSC RPC endpoint",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

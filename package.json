@@ -1,0 +1,65 @@
+{
+  "name": "@broketobuilt/base-token-safety-mcp",
+  "version": "0.1.0",
+  "description": "Keyless MCP server + CLI for token safety on Base: eth_getCode ground truth (explicit NOT_A_CONTRACT), honeypot.is + GoPlus cross-check, structured pass/caution/fail verdicts. Signals, not guarantees.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "base-token-safety-mcp": "dist/cli.js"
+  },
+  "main": "dist/core.js",
+  "types": "dist/core.d.ts",
+  "exports": {
+    ".": "./dist/core.js",
+    "./server": "./dist/server.js"
+  },
+  "files": [
+    "dist",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordbasilaiassistant-sudo/base-token-safety-mcp.git"
+  },
+  "homepage": "https://github.com/lordbasilaiassistant-sudo/base-token-safety-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/lordbasilaiassistant-sudo/base-token-safety-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol",
+    "base",
+    "base-chain",
+    "token-safety",
+    "token-security",
+    "honeypot",
+    "honeypot-detector",
+    "rug-check",
+    "rug-pull",
+    "crypto-security",
+    "agent-tools",
+    "goplus",
+    "defi",
+    "erc20"
+  ],
+  "mcpName": "io.github.lordbasilaiassistant-sudo/base-token-safety",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}
