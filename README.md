@@ -66,7 +66,7 @@ That is one real `check_token` call on WETH (Base) — no API key, no signup, 37
 **Claude Code**
 
 ```sh
-claude mcp add base-token-safety -- npx -y @broketobuilt/base-token-safety-mcp
+claude mcp add base-token-safety -- npx -y base-token-safety-mcp
 ```
 
 **Cursor** (`~/.cursor/mcp.json`)
@@ -76,7 +76,7 @@ claude mcp add base-token-safety -- npx -y @broketobuilt/base-token-safety-mcp
   "mcpServers": {
     "base-token-safety": {
       "command": "npx",
-      "args": ["-y", "@broketobuilt/base-token-safety-mcp"]
+      "args": ["-y", "base-token-safety-mcp"]
     }
   }
 }
@@ -90,7 +90,7 @@ claude mcp add base-token-safety -- npx -y @broketobuilt/base-token-safety-mcp
     "base-token-safety": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@broketobuilt/base-token-safety-mcp"]
+      "args": ["-y", "base-token-safety-mcp"]
     }
   }
 }
@@ -99,8 +99,8 @@ claude mcp add base-token-safety -- npx -y @broketobuilt/base-token-safety-mcp
 **Plain CLI — no MCP client needed**
 
 ```sh
-npx -y @broketobuilt/base-token-safety-mcp check 0x4200000000000000000000000000000000000006
-npx -y @broketobuilt/base-token-safety-mcp check 0x... --chain ethereum
+npx -y base-token-safety-mcp check 0x4200000000000000000000000000000000000006
+npx -y base-token-safety-mcp check 0x... --chain ethereum
 ```
 
 Exit codes: `0` = check completed (read `verdict` in the JSON), `2` = invalid input.

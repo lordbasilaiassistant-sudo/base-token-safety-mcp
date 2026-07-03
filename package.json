@@ -1,5 +1,5 @@
 {
-  "name": "@broketobuilt/base-token-safety-mcp",
+  "name": "base-token-safety-mcp",
   "version": "0.1.0",
   "description": "Keyless MCP server + CLI for token safety on Base: eth_getCode ground truth (explicit NOT_A_CONTRACT), honeypot.is + GoPlus cross-check, structured pass/caution/fail verdicts. Signals, not guarantees.",
   "type": "module",

@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "@broketobuilt/base-token-safety-mcp",
+      "identifier": "base-token-safety-mcp",
       "version": "0.1.0",
       "runtimeHint": "npx",
       "transport": {
